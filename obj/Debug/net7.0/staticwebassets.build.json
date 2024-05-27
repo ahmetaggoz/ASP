@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KrV6xSmYflSZSbHSP3Uk5JyKd5UXJW6kWZCxFR7sYX4=",
+  "Hash": "lljh8ewbK6eOAv5I66pFKl2hIuQ+N867PG0rXAmRyBQ=",
   "Source": "FormsApp",
   "BasePath": "_content/FormsApp",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\6.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\ahmet\\OneDrive\\Masaüstü\\Bitirme Projem\\aspnetcore\\FormsApp\\wwwroot\\img\\e55f1f46-9f69-4cfc-807a-ef7f86416e5f.jpeg",
+      "SourceId": "FormsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmet\\OneDrive\\Masaüstü\\Bitirme Projem\\aspnetcore\\FormsApp\\wwwroot\\",
+      "BasePath": "_content/FormsApp",
+      "RelativePath": "img/e55f1f46-9f69-4cfc-807a-ef7f86416e5f.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\e55f1f46-9f69-4cfc-807a-ef7f86416e5f.jpeg"
     },
     {
       "Identity": "C:\\Users\\ahmet\\OneDrive\\Masaüstü\\Bitirme Projem\\aspnetcore\\FormsApp\\wwwroot\\js\\site.js",
