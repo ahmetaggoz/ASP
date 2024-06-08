@@ -1,5 +1,7 @@
 using efcoreApp.Data;
+using efcoreApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace efcoreApp.Controllers
@@ -13,11 +15,12 @@ namespace efcoreApp.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var kurslar = await _context.Kurslar.ToListAsync();
+            var kurslar = await _context.Kurslar.Include(k => k.Ogretmen).ToListAsync();
             return View(kurslar);
         }
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
             return View();
         }
         [HttpPost]
@@ -43,13 +46,14 @@ namespace efcoreApp.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
             return View(kurs);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Kurs kurs)
+        public async Task<IActionResult> Edit(int id, KursViewModel model)
         {
-            if(id != kurs.KursId)
+            if(id != model.KursId)
             {
                 return NotFound();
             }
@@ -57,13 +61,13 @@ namespace efcoreApp.Controllers
             {
                 try
                 {
-                    _context.Update(kurs);
+                    _context.Update(new Kurs(){ KursId = model.KursId, Baslik = model.Baslik, OgretmenId = model.OgretmenId});
                     await _context.SaveChangesAsync();
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (DbUpdateException)
                 {
                     
-                    if(!_context.Kurslar.Any(o => o.KursId == kurs.KursId))
+                    if(!_context.Kurslar.Any(o => o.KursId == model.KursId))
                     {
                         return NotFound();
                     }else
@@ -73,7 +77,7 @@ namespace efcoreApp.Controllers
                 }
                 return RedirectToAction("Index");
             }
-            return View(kurs);
+            return View(model);
         }
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)

@@ -1,4 +1,4 @@
-@model Kurs
+@model KursViewModel
 <h2>Kurs Güncelleme</h2>
 <hr>
 <div class="row">
@@ -9,6 +9,12 @@
                 <label asp-for="Baslik" class="form-label">Başlık</label>
                 <input asp-for="Baslik" class="form-control">
             </div>
+            <div class="mb-3">
+                <label asp-for="OgretmenId" class="form-label"></label>
+                <select asp-for="OgretmenId" asp-items="ViewBag.Ogretmenler" class="form-control">
+                    <option value="">Seçiniz</option>
+                </select>
+            </div>
 
             <button type="submit" class="btn btn-primary">Kaydet</button>
         </form>
@@ -17,10 +23,10 @@
         <h4>Öğrenciler</h4>
         <hr>
         <ul>
-            @foreach(var item in @Model.KursKayitlari)
+            @* @foreach (var item in @Model.KursKayitlari)
             {
                 <li>@item.Ogrenci.AdSoyad</li>
-            }
+            } *@
         </ul>
     </div>
 </div>
