@@ -19,7 +19,7 @@ namespace efcoreApp.Controllers
                 .Include(x => x.Ogrenci)
                 .Include(x => x.Kurs)
                 .ToListAsync();
-            return View();
+            return View(kursKayitlari);
         }
 
         public async Task<IActionResult> Create()
