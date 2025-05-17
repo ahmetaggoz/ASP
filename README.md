@@ -8,4 +8,4 @@ Bu projede portfolyo sitesi oluşturduk. Kendinizi tanıttığınız, projelerin
 * C#
 * MVC(Model - View - Controller)
 * SQL
-![](C:\Users\ahmet\Downloads\Index_Anasayfa.png)
+![](https://i.hizliresim.com/99ev9ye.png)
