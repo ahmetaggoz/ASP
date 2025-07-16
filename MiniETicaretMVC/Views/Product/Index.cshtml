@@ -1,0 +1,81 @@
+﻿@model IEnumerable<MiniETicaretMVC.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ürün Listesi</h2>
+
+<div class="mb-3">
+    <a href="@Url.Action("Create")" class="btn btn-success"><i class="fa fa-plus"></i>Yeni Ürün Ekle</a>
+</div>
+@if (!Model.Any())
+            {
+
+
+<div class="alert alert-info">Henüz ürün girilmemiştir.</div>
+}
+else
+            {
+                <div class="row">
+                    @foreach(var item in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.Name</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">@item.Category?.Name</h6>
+                                <p class="card-text">@item.Description</p>
+                                <p class="card-text"><strong>Fiyat:</strong>@item.Price.ToString("C2")</p>
+
+                                <div class="d-flex justify-content-between">
+                                    <a href="@Url.Action("Edit", new { id = item.ProductId})" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i>Düzenle</a>
+                                    <a href="@Url.Action("Delete", new { id = item.ProductId})" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>Sil</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+            }
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
+        </td>
+    </tr>
+}
+
+</table>*@
