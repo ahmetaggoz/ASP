@@ -1,0 +1,10 @@
+https://github.com/ahmetaggoz/UdemyCarBook.git
+https://github.com/ahmetaggoz/MiniETicaretMVC.git
+https://github.com/ahmetaggoz/ProductManagerSystem.git
+https://github.com/ahmetaggoz/MyPortfolioUdemy.git
+https://github.com/ahmetaggoz/Evbul.git
+https://github.com/ahmetaggoz/BlogApp.git
+https://github.com/ahmetaggoz/efcoreApp.git
+https://github.com/ahmetaggoz/FormsApp-NetCore7.0.git
+https://github.com/ahmetaggoz/BTK-Akademi-ASPNET-Core-MVC-Egitimi.git
+https://github.com/ahmetaggoz/KarsilastirmaOyunum.git
