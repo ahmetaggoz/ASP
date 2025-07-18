@@ -1,0 +1,123 @@
+﻿@model Ev
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="bg-white p-4">
+            <h1 class="h4 mb-4">@Model.Baslik</h1>
+            <div class="ozellikler">
+                @foreach (var ozellik in Model.Ozellikler)
+                {
+                    <a href="/evler/ozellik/@ozellik.Url"
+                        class="badge bg-@ozellik.Renk bg-opacity-10 text-@ozellik.Renk mb-2 fw-bold">@ozellik.Yazi</a>
+                }
+            </div>
+
+            <img src="~/img/@Model.Image" class="img-fluid rounded" />
+            <ul class="list-inline my-3">
+                <li class="list-inline-item"><i class="bi bi-calender"></i> @Model.YayinlamaTarihi.ToString("d")</li>
+                <li class="list-inline-item"><i class="bi bi-person-circle"></i> <a href="/profile/@Model.Kullanici.KullaniciAd"> @Model.Kullanici.Ad </a></li>
+            </ul>
+            <hr class="py-3">
+            <div>@Html.Raw(@Model.Aciklama)</div>
+        </div>
+        <div class="bg-white mt-3">
+            <div class="card border-0">
+                <div class="card-header pb-0">
+                    <h4><span id="yorumSayisi"> @Model.Yorumlar.Count</span> adet yorum</h4>
+                </div>
+                <div class="card-body">
+                    <div id="yorumlar">
+                        @foreach (var yorum in Model.Yorumlar)
+                        {
+                            <div class="my-4 d-flex">
+                                <img src="/img/@yorum.Kullanici.Image" alt=""
+                                    class="avatar rounded-circle float-start me-3">
+                                <div>
+                                    <div class="mb-2 d-flex">
+                                        <h6 class="me-2">
+                                            <a href="/profile/@yorum.Kullanici.KullaniciAd"> @yorum.Kullanici.Ad </a>
+                                         
+                                        </h6>
+                                        <small>@yorum.Tarih.ToString("d")</small>
+                                    </div>
+                                    <p>@yorum.Yazi</p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    @if (User.Identity!.IsAuthenticated)
+                    {
+                        <hr class="my-4">
+                        <div>
+                            <h4 class="mb-3">Yorum Ekle</h4>
+                            <form action="/evler/YorumEkle" method="post">
+                                <input type="hidden" id="EvId" name="EvId" value="@Model.EvId">
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="Yazi">Yorum</label>
+                                    <textarea rows="3" type="text" name="Yazi" id="Yazi" class="form-control"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <button id="btnYorumKayit" type="submit" class="btn btn-primary">Kaydet</button>
+                                </div>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Yorum için uygulamaya giriş yapmalısınız <a href="/kullanicilar/giris">Giriş</a> </p>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <vc:ozellikler-menu></vc:ozellikler-menu>
+        <vc:yeni-evler></vc:yeni-evler>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnYorumKayit").click(function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("YorumEkle")',
+                    dataType: 'json',
+                    data: {
+                        EvId: $('#EvId').val(),
+                        KullaniciAd: $('#KullaniciAd').val(),
+                        Yazi: $('#Yazi').val()
+                    },
+                    success: function (yorum) {
+                        var date = new Date(yorum.tarih);
+                        $("#yorumlar").append(`
+                                <div class="my-4 d-flex">
+                                    <img src="/img/${yorum.avatar}" alt="" class="avatar rounded-circle float-start me-3">
+                                    <div>
+                                        <div class="mb-2 d-flex">
+                                            <h6 class="me-2">${yorum.username}</h6>
+                                            <small>${date.toLocaleDateString()}</small>
+                                        </div>
+                                        <p>${yorum.yazi}</p>
+                                    </div>
+                                </div>
+                            `);
+                        $("#KullaniciAd").val('');
+                        $("#Yazi").val('');
+
+                        var adet = parseInt($("#yorumSayisi").text());
+                        $("#yorumSayisi").text(adet + 1);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+}
