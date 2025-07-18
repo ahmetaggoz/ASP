@@ -20,7 +20,7 @@ Get-Content $RepoListFile | ForEach-Object {
     git fetch $repoName
 
     # Subtree olarak ekle
-    git subtree add --prefix=$repoName $repoName main
+    git subtree add --prefix=$repoName $repoName master
 
     # Remote kaldır
     git remote remove $repoName
