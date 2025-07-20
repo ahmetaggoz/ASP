@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Çalışan Düzenle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Employee
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+
+<form method="post" class="needs-validation" novalidate>
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+            <label asp-for="AdSoyad" class="form-label"></label>
+            <input asp-for="AdSoyad" class="form-control" required />
+            <div class="invalid-feedback">
+                Lütfen ad soyad giriniz.
+            </div>
+
+            <label asp-for="Departman" class="form-label"></label>
+            <input asp-for="Departman" class="form-control" required />
+            <div class="invalid-feedback">
+                Lütfen departman giriniz.
+            </div>
+
+            <label asp-for="Email" class="form-label"></label>
+            <input type="email" asp-for="Email" class="form-control" required />
+            <div class="invalid-feedback">
+                Lütfen email giriniz.
+            </div>
+        <button type="submit" class="btn btn-primary my-2">Kaydet</button>
+    </div>
+</form>
+
+
+

@@ -3462,19 +3462,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zafer\\.nuget\\packages\\": {}
+    "C:\\Users\\ahmet\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MVC\\Store\\StoreApp\\StoreApp.csproj",
+      "projectUniqueName": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\StoreApp\\StoreApp.csproj",
       "projectName": "StoreApp",
-      "projectPath": "E:\\MVC\\Store\\StoreApp\\StoreApp.csproj",
-      "packagesPath": "C:\\Users\\zafer\\.nuget\\packages\\",
-      "outputPath": "E:\\MVC\\Store\\StoreApp\\obj\\",
+      "projectPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\StoreApp\\StoreApp.csproj",
+      "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\StoreApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\zafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3482,23 +3487,24 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\MVC\\Store\\Entities\\Entities.csproj": {
-              "projectPath": "E:\\MVC\\Store\\Entities\\Entities.csproj"
+            "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Entities\\Entities.csproj"
             },
-            "E:\\MVC\\Store\\Presentation\\Presentation.csproj": {
-              "projectPath": "E:\\MVC\\Store\\Presentation\\Presentation.csproj"
+            "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Presentation\\Presentation.csproj": {
+              "projectPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Presentation\\Presentation.csproj"
             },
-            "E:\\MVC\\Store\\Repositories\\Repositories.csproj": {
-              "projectPath": "E:\\MVC\\Store\\Repositories\\Repositories.csproj"
+            "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Repositories\\Repositories.csproj"
             },
-            "E:\\MVC\\Store\\Services\\Services.csproj": {
-              "projectPath": "E:\\MVC\\Store\\Services\\Services.csproj"
+            "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Services\\Services.csproj"
             }
           }
         }
@@ -3507,7 +3513,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net6.0": {
@@ -3531,6 +3543,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3539,7 +3569,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Çalışanlar";
+}
+@model List<Employee>
+<h2 class="mb-4">@ViewData["Title"]</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Ad Soyad</th>
+            <th>Departman</th>
+            <th>Email</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var emp in Model)
+        {
+            <tr>
+                <td>@emp.Id</td>
+                <td>@emp.AdSoyad</td>
+                <td>@emp.Departman</td>
+                <td>@emp.Email</td>
+                <td>
+                    <a class="btn btn-sm btn-danger"  asp-controller="Employee" asp-action="Delete">Sil</a>
+                    <a class="btn btn-sm btn-warning"  asp-controller="Employee" asp-action="Update" asp-route-id="@emp.Id">Düzenle</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{444FACB9-E257-43EB-BAF7-94695B4DEDBA}|DataAccess\\DataAccess.csproj|c:\\users\\ahmet\\source\\repos\\employeemanagementsystem\\dataaccess\\dapper\\dapperemployeedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{444FACB9-E257-43EB-BAF7-94695B4DEDBA}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dapper\\dapperemployeedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{444FACB9-E257-43EB-BAF7-94695B4DEDBA}|DataAccess\\DataAccess.csproj|c:\\users\\ahmet\\source\\repos\\employeemanagementsystem\\dataaccess\\interfaces\\iemployeedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{444FACB9-E257-43EB-BAF7-94695B4DEDBA}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\interfaces\\iemployeedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76D52435-ED61-4E92-880B-0F155D57D578}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\ahmet\\source\\repos\\employeemanagementsystem\\employeemanagementsystem\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76D52435-ED61-4E92-880B-0F155D57D578}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76D52435-ED61-4E92-880B-0F155D57D578}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\ahmet\\source\\repos\\employeemanagementsystem\\employeemanagementsystem\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76D52435-ED61-4E92-880B-0F155D57D578}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76D52435-ED61-4E92-880B-0F155D57D578}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\ahmet\\source\\repos\\employeemanagementsystem\\employeemanagementsystem\\views\\employee\\insert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76D52435-ED61-4E92-880B-0F155D57D578}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\employee\\insert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76D52435-ED61-4E92-880B-0F155D57D578}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\ahmet\\source\\repos\\employeemanagementsystem\\employeemanagementsystem\\views\\employee\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76D52435-ED61-4E92-880B-0F155D57D578}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\views\\employee\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D414D299-A3FC-40B6-9167-CB25A305AEA6}|Business\\Business.csproj|c:\\users\\ahmet\\source\\repos\\employeemanagementsystem\\business\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D414D299-A3FC-40B6-9167-CB25A305AEA6}|Business\\Business.csproj|solutionrelative:business\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D414D299-A3FC-40B6-9167-CB25A305AEA6}|Business\\Business.csproj|c:\\users\\ahmet\\source\\repos\\employeemanagementsystem\\business\\manager\\employeemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D414D299-A3FC-40B6-9167-CB25A305AEA6}|Business\\Business.csproj|solutionrelative:business\\manager\\employeemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Insert.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\EmployeeManagementSystem\\Views\\Employee\\Insert.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Employee\\Insert.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\EmployeeManagementSystem\\Views\\Employee\\Insert.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Employee\\Insert.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAzwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-20T17:33:03.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\EmployeeManagementSystem\\Views\\Employee\\Update.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Employee\\Update.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\EmployeeManagementSystem\\Views\\Employee\\Update.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Employee\\Update.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-20T17:32:55.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\EmployeeManagementSystem\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\EmployeeManagementSystem\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "EmployeeManagementSystem\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-20T17:08:49.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DapperEmployeeDal.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\DataAccess\\Dapper\\DapperEmployeeDal.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Dapper\\DapperEmployeeDal.cs",
+              "ToolTip": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\DataAccess\\Dapper\\DapperEmployeeDal.cs",
+              "RelativeToolTip": "DataAccess\\Dapper\\DapperEmployeeDal.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowCgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T16:18:05.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T15:42:08.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeManager.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\Business\\Manager\\EmployeeManager.cs",
+              "RelativeDocumentMoniker": "Business\\Manager\\EmployeeManager.cs",
+              "ToolTip": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\Business\\Manager\\EmployeeManager.cs",
+              "RelativeToolTip": "Business\\Manager\\EmployeeManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T15:28:01.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\Business\\Services\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\Business\\Services\\IEmployeeService.cs",
+              "RelativeToolTip": "Business\\Services\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T15:29:44.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEmployeeDal.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\DataAccess\\Interfaces\\IEmployeeDal.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Interfaces\\IEmployeeDal.cs",
+              "ToolTip": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\DataAccess\\Interfaces\\IEmployeeDal.cs",
+              "RelativeToolTip": "DataAccess\\Interfaces\\IEmployeeDal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T15:16:14.171Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
