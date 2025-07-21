@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cTf7Y1dRdI4=",
+  "dgSpecHash": "QxJk9Zgn608=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmet\\source\\repos\\EmployeeManagementSystem\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\EmployeeManagementSystem\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmet\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

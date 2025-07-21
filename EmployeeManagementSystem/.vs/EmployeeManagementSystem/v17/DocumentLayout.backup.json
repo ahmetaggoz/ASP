@@ -54,8 +54,7 @@
               "RelativeToolTip": "EmployeeManagementSystem\\Views\\Employee\\Insert.cshtml",
               "ViewState": "AgIAAAgAAAAAAAAAAAAzwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T17:33:03.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T17:33:03.786Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "EmployeeManagementSystem\\Views\\Employee\\Update.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAB4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T17:32:55.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T17:32:55.84Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "EmployeeManagementSystem\\Views\\Employee\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T17:08:49.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T17:08:49.724Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAwwCkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T15:42:08.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T15:42:08.272Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "Business\\Manager\\EmployeeManager.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T15:28:01.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T15:28:01.472Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "Business\\Services\\IEmployeeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T15:29:44.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T15:29:44.862Z"
             },
             {
               "$type": "Document",
@@ -145,8 +139,7 @@
               "RelativeToolTip": "DataAccess\\Interfaces\\IEmployeeDal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T15:16:14.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T15:16:14.171Z"
             }
           ]
         }

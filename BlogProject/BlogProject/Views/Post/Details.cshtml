@@ -1,0 +1,25 @@
+﻿@model PostViewModel
+
+@{
+    ViewData["Title"] = "Blog Detayları";
+}
+
+<div class="container">
+    <div class="row">
+
+            
+        <div class="col-md-12">
+            <div class="card my-2">
+                    <h6 class="card-title text-center lead my-4">@Model.Title</h6>
+
+                    <div class="card-body">
+                        @Model.Content
+                    </div>
+                    <div class="card-footer">
+                        @Model.Author
+                    </div>
+            </div>
+          
+        </div>
+    </div>
+</div>

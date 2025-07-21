@@ -1,0 +1,16 @@
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\bin\Debug\net8.0\BlogProject.Infrastructure.deps.json
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\bin\Debug\net8.0\BlogProject.Infrastructure.dll
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\bin\Debug\net8.0\BlogProject.Infrastructure.pdb
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\bin\Debug\net8.0\BlogProject.Core.dll
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\bin\Debug\net8.0\BlogProject.Core.pdb
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.AssemblyInfo.cs
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.sourcelink.json
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProj.6C1D5B5B.Up2Date
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.dll
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\refint\BlogProject.Infrastructure.dll
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.pdb
+C:\Users\ahmet\Desktop\Is\ASP\BlogProject\BlogProject.Infrastructure\obj\Debug\net8.0\ref\BlogProject.Infrastructure.dll
