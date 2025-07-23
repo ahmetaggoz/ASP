@@ -69,16 +69,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.303, 9.0.303]"
             }
           ],
           "frameworkReferences": {
@@ -169,6 +161,10 @@
             {
               "name": "Microsoft.AspNetCore.App.Ref",
               "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.303, 9.0.303]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
@@ -262,6 +258,10 @@
             {
               "name": "Microsoft.AspNetCore.App.Ref",
               "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.303, 9.0.303]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",

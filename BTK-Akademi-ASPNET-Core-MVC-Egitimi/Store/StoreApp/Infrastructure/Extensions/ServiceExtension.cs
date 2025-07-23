@@ -1,6 +1,7 @@
 using Entities.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Contracts;

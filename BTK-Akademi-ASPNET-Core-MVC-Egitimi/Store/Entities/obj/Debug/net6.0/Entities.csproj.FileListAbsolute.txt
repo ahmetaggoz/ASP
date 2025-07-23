@@ -10,3 +10,16 @@ E:\MVC\Store\Entities\obj\Debug\net6.0\Entities.dll
 E:\MVC\Store\Entities\obj\Debug\net6.0\refint\Entities.dll
 E:\MVC\Store\Entities\obj\Debug\net6.0\Entities.pdb
 E:\MVC\Store\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\Entities.sourcelink.json
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\ahmet\Desktop\Is\ASP\BTK-Akademi-ASPNET-Core-MVC-Egitimi\Store\Entities\obj\Debug\net6.0\ref\Entities.dll

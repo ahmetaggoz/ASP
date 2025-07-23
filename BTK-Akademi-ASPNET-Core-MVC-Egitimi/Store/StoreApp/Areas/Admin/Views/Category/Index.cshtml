@@ -4,10 +4,56 @@
     <div class="display-6">Categories</div>
 </div>
 
-<ul class="list-group my-5">
-    @foreach (var cat in Model)
-    {
-        <li class="list-group-item">@cat.CategoryName</li>
-    }
-</ul>
 
+
+<div class="container">
+    
+
+        <div class="d-flex justify-content-end my-2">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-warning">
+                <i class="fa-solid fa-plus"></i>
+            </a>
+        </div>
+    <table>
+        <thead>
+            <tr>
+            <td>Name</td>
+            <td>Settings</td>
+            </tr>
+        </thead>
+        <tbody>
+             @foreach (var category in Model)
+            {
+                <tr>
+            <td>
+                        @category.CategoryName
+            </td>
+            <td>
+                        <div class="btn-group rounded-0">
+                            <a data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-warning"
+                               asp-action="Update" asp-route-id="@category.CategoryId">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <a data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-danger"
+                               asp-action="Delete" asp-route-id="@category.CategoryId">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </div>
+            </td>
+                </tr>
+             }
+        </tbody>
+    </table>
+    
+
+</div>
+
+
+@section Scripts
+                            {
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+}

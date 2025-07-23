@@ -2768,6 +2768,10 @@
             "version": "[6.0.36, 6.0.36]"
           },
           {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.303, 9.0.303]"
+          },
+          {
             "name": "Microsoft.NETCore.App.Ref",
             "version": "[6.0.36, 6.0.36]"
           },
