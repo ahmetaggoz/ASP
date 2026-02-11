@@ -32,7 +32,8 @@ namespace Presentation.Controllers
         {
             return Ok(await _services
                 .CategoryService
-                .GetOneCategoryByIdAsync(id,false));
+                .GetOneCategoryByIdAsync(id, false));
         }
+        //Create, Delete, Update yazılacak
     }
 }

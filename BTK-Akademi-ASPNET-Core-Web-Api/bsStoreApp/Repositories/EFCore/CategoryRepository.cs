@@ -19,10 +19,8 @@ namespace Repositories.EFCore
 
         public void CreateOneCategory(Category category) => Create(category);
 
-        public void DeleteOneCategory(Category category)
-        {
-            throw new NotImplementedException();
-        }
+        public void DeleteOneCategory(Category category) => Delete(category);
+        
 
         public async Task<IEnumerable<Category>> GetAllCategoriesAsync(bool trackChanges) =>  
              await FindAll(trackChanges)
@@ -33,9 +31,7 @@ namespace Repositories.EFCore
             await FindByCondition(c => c.CategoryId.Equals(id), trackChanges)
                 .SingleOrDefaultAsync();
 
-        public void UpdateOneCategory(Category category)
-        {
-            throw new NotImplementedException();
-        }
+        public void UpdateOneCategory(Category category) => Update(category);
+        
     }
 }

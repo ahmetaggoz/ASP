@@ -1,0 +1,59 @@
+﻿@model CustomerViewModel.CustomerListViewModel
+@{
+    ViewData["Title"] = "Müşteriler";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="fas fa-users me-2"></i>Müşteriler (@Model.TotalCount)</h2>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fas fa-plus me-1"></i>Yeni Müşteri
+    </a>
+</div>
+
+<!-- Search Form -->
+<div class="card mb-4">
+    <div class="card-body">
+        <form method="get" class="row g-3" id="searchForm">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    <input type="text" class="form-control" name="searchTerm"
+                           value="@Model.SearchTerm" placeholder="Ad, soyad veya email ile ara...">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-outline-primary me-2">Ara</button>
+                <a asp-action="Index" class="btn btn-outline-secondary">Temizle</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Customer List -->
+<div id="customerListContainer">
+    <partial name="_CustomerListPartial" model="@Model.Customers" />
+</div>
+
+@section Scripts {
+    <script>
+        // AJAX search functionality
+        $('#searchForm input[name="searchTerm"]').on('input', function() {
+            const searchTerm = $(this).val();
+
+            $.get('@Url.Action("SearchCustomers")', { searchTerm: searchTerm })
+                .done(function(data) {
+                    $('#customerListContainer').html(data);
+                })
+                .fail(function() {
+                    console.error('Search failed');
+                });
+        });
+
+        // Delete confirmation
+        function confirmDelete(customerId, customerName) {
+            if (confirm(`"${customerName}" adlı müşteriyi silmek istediğinizden emin misiniz?`)) {
+                $('#deleteForm-' + customerId).submit();
+            }
+        }
+    </script>
+}

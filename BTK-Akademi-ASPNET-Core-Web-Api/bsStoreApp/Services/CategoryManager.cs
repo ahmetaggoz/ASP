@@ -19,6 +19,16 @@ namespace Services
             _manager = manager;
         }
 
+        public void CreateOneCategory(Category category)
+        {
+            _manager.Category.Create(category);
+        }
+
+        public void DeleteOneCategory(Category category)
+        {
+            _manager.Category.DeleteOneCategory(category);
+        }
+
         public async Task<IEnumerable<Category>> GetAllCategoriesAsync(bool trackChanges)
         {
             return await _manager
@@ -36,6 +46,11 @@ namespace Services
             if (category is null)
                 throw new CategoryNotFoundException(id);
             return category;
+        }
+
+        public void UpdateOneCategory(Category category)
+        {
+            _manager.Category.UpdateOneCategory(category);
         }
     }
 }

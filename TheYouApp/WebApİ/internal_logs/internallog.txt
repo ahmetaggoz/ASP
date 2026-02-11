@@ -1,0 +1,14 @@
+2026-02-11 18:56:31.9008 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-11 18:56:31.9201 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-11 18:56:31.9432 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-11 18:58:18.5289 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-11 18:58:18.5428 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-11 18:58:18.5634 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-11 19:01:21.1418 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-11 19:01:21.1602 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-11 19:01:21.1855 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-11 19:02:16.3763 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-11 19:02:16.3900 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-11 19:02:16.4096 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-11 19:05:12.9012 Info AppDomain Shutting down. LogFactory closing...
+2026-02-11 19:05:12.9110 Info LogFactory has been disposed.

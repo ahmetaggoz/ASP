@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jbx1oPBWaEE=",
+  "dgSpecHash": "2MHNmFl2/VY=",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\BTK-Akademi-ASPNET-Core-MVC-Egitimi\\Store\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -62,11 +62,7 @@
     "C:\\Users\\ahmet\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\ahmet\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.303\\microsoft.net.sdk.compilers.toolset.9.0.303.nupkg.sha512",
-    "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+    "C:\\Users\\ahmet\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CustomerDto>
+
+@if (Model.Any())
+{
+    <div class="row">
+        @foreach (var customer in Model)
+        {
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">@customer.FullName</h5>
+                            <span class="badge @(customer.IsActive ? "bg-success" : "bg-secondary")">
+                                @(customer.IsActive ? "Aktif" : "Pasif")
+                            </span>
+                        </div>
+                        <p class="card-text">
+                            <i class="fas fa-envelope me-1 text-muted"></i>@customer.Email<br>
+                            <i class="fas fa-calendar me-1 text-muted"></i>@customer.CreatedDate.ToString("dd.MM.yyyy")
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <div class="btn-group w-100" role="group">
+                            <a asp-action="Details" asp-route-id="@customer.Id"
+                               class="btn btn-sm btn-outline-info">
+                                <i class="fas fa-eye"></i> Detay
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@customer.Id"
+                               class="btn btn-sm btn-outline-warning">
+                                <i class="fas fa-edit"></i> Düzenle
+                            </a>
+                            <button type="button" class="btn btn-sm btn-outline-danger"
+                                    onclick="confirmDelete(@customer.Id, '@customer.FullName')">
+                                <i class="fas fa-trash"></i> Sil
+                            </button>
+                        </div>
+
+                        <form id="deleteForm-@customer.Id" asp-action="Delete"
+                              asp-route-id="@customer.Id" method="post" style="display: none;">
+                            @Html.AntiForgeryToken()
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="text-center py-5">
+        <i class="fas fa-users fa-3x text-muted mb-3"></i>
+        <h4 class="text-muted">Müşteri bulunamadı</h4>
+        <p class="text-muted">Henüz hiç müşteri kaydı yok veya arama kriterlerinize uygun müşteri bulunamadı.</p>
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="fas fa-plus me-1"></i>İlk Müşteriyi Ekle
+        </a>
+    </div>
+}

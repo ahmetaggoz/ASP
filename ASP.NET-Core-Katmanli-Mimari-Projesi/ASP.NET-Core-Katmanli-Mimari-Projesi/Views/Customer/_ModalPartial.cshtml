@@ -1,0 +1,53 @@
+﻿@model IEnumerable<OrderDto>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Müşteri Sipariş Detayı</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+            </div>
+
+            <div class="modal-body">
+                @foreach (var order in Model)
+                {
+                    @foreach (var orderItems in order.OrderItems)
+                    {
+                        <p>merhaba dünya</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Product Name</td>
+                                    <td>Unit Price</td>
+                                    <td>Quantity</td>
+                                    <td>Total Price</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        @orderItems.Id
+                                    </td>
+                                    <td>@orderItems.ProductName</td>
+                                    <td>@orderItems.UnitPrice</td>
+                                    <td>@orderItems.Quantity</td>
+                                    <td>@orderItems.TotalPrice</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    }
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>

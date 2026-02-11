@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35044328-1878-421A-9625-AC9119916A43}|Services\\Services.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35044328-1878-421A-9625-AC9119916A43}|Services\\Services.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35044328-1878-421A-9625-AC9119916A43}|Services\\Services.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\services\\contracts\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35044328-1878-421A-9625-AC9119916A43}|Services\\Services.csproj|solutionrelative:services\\contracts\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30449A70-A56C-4E0B-B03F-49729487F2B1}|Repositories\\Repositories.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\repositories\\contracts\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30449A70-A56C-4E0B-B03F-49729487F2B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\contracts\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30449A70-A56C-4E0B-B03F-49729487F2B1}|Repositories\\Repositories.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30449A70-A56C-4E0B-B03F-49729487F2B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3281719-9619-4F59-A074-09035CA16DAD}|ASP.NET-Core-Katmanli-Mimari-Projesi\\ECommerceApp.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\asp.net-core-katmanli-mimari-projesi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3281719-9619-4F59-A074-09035CA16DAD}|ASP.NET-Core-Katmanli-Mimari-Projesi\\ECommerceApp.csproj|solutionrelative:asp.net-core-katmanli-mimari-projesi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3281719-9619-4F59-A074-09035CA16DAD}|ASP.NET-Core-Katmanli-Mimari-Projesi\\ECommerceApp.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\asp.net-core-katmanli-mimari-projesi\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3281719-9619-4F59-A074-09035CA16DAD}|ASP.NET-Core-Katmanli-Mimari-Projesi\\ECommerceApp.csproj|solutionrelative:asp.net-core-katmanli-mimari-projesi\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3281719-9619-4F59-A074-09035CA16DAD}|ASP.NET-Core-Katmanli-Mimari-Projesi\\ECommerceApp.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\asp.net-core-katmanli-mimari-projesi\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3281719-9619-4F59-A074-09035CA16DAD}|ASP.NET-Core-Katmanli-Mimari-Projesi\\ECommerceApp.csproj|solutionrelative:asp.net-core-katmanli-mimari-projesi\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDA1712-C740-4F82-B454-81546EF56FA6}|Entities\\Entities.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\entities\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBDA1712-C740-4F82-B454-81546EF56FA6}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBDA1712-C740-4F82-B454-81546EF56FA6}|Entities\\Entities.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\asp.net-core-katmanli-mimari-projesi\\entities\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBDA1712-C740-4F82-B454-81546EF56FA6}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 250,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Services\\Contracts\\IProductService.cs",
+              "RelativeDocumentMoniker": "Services\\Contracts\\IProductService.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Services\\Contracts\\IProductService.cs",
+              "RelativeToolTip": "Services\\Contracts\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T12:37:33.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET-Core-Katmanli-Mimari-Projesi\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "ASP.NET-Core-Katmanli-Mimari-Projesi\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-26T19:00:23.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Repositories\\Contracts\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Contracts\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Repositories\\Contracts\\IProductRepository.cs",
+              "RelativeToolTip": "Repositories\\Contracts\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T18:45:40.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T18:43:27.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Services\\ProductService.cs",
+              "RelativeToolTip": "Services\\ProductService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T18:33:30.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Entities\\Dtos\\CreateProductDto.cs",
+              "RelativeDocumentMoniker": "Entities\\Dtos\\CreateProductDto.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Entities\\Dtos\\CreateProductDto.cs",
+              "RelativeToolTip": "Entities\\Dtos\\CreateProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T18:28:34.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Entities\\Dtos\\ProductDto.cs",
+              "RelativeDocumentMoniker": "Entities\\Dtos\\ProductDto.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Entities\\Dtos\\ProductDto.cs",
+              "RelativeToolTip": "Entities\\Dtos\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T18:27:47.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Models\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "ASP.NET-Core-Katmanli-Mimari-Projesi\\Models\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Models\\ProductViewModel.cs",
+              "RelativeToolTip": "ASP.NET-Core-Katmanli-Mimari-Projesi\\Models\\ProductViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBEAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T22:29:54.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ASP.NET-Core-Katmanli-Mimari-Projesi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\ASP.NET-Core-Katmanli-Mimari-Projesi\\ASP.NET-Core-Katmanli-Mimari-Projesi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ASP.NET-Core-Katmanli-Mimari-Projesi\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAA0wGUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T22:32:46.229Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

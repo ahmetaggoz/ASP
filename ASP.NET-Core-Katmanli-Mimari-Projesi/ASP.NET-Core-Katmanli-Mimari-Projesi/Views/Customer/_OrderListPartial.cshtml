@@ -1,0 +1,36 @@
+﻿@model IEnumerable<OrderDto>
+
+@if (Model.Any())
+{
+    <div class="row">
+        @foreach (var order in Model)
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Order Date</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Status Text</td>
+                        <td>Order Items</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.OrderDate</td>
+                        <td>@order.TotalAmount</td>
+                        <td>@order.Status</td>
+                        <td>@order.StatusText</td>
+                        <td>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>  
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+    </div>
+}

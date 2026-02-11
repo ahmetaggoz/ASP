@@ -1,0 +1,45 @@
+﻿Proje Özellikleri:
+🏗️ Katmanlı Mimari
+
+Domain Layer: Entities, DTOs, Business Models
+Data Access Layer: Repository Pattern, DbContext
+Business Layer: Services, Business Logic
+Presentation Layer: Controllers, Views, ViewModels
+
+🎯 SOLID Prensipleri
+
+SRP: Her sınıf tek sorumluluğa sahip
+OCP: Interface'ler genişletmeye açık
+LSP: Alt sınıflar üst sınıfların yerine geçebilir
+ISP: Küçük, spesifik interface'ler
+DIP: Dependency Injection ile loose coupling
+
+📊 DTOs ve ViewModels
+
+DTOs: Katmanlar arası veri transferi
+ViewModels: View'lara özel veri modelleri
+Validation: Data Annotations ile doğrulama
+
+🧩 Partial Views
+
+_CustomerListPartial: Müşteri listesi
+_OrderListPartial: Sipariş listesi
+_AlertMessages: Bildirim mesajları
+
+🔧 Gelişmiş Özellikler
+
+Global Exception Handling
+Custom Validation Attributes
+AJAX Search Functionality
+Toast Notifications
+Responsive Design
+Turkish Localization
+
+💾 Veritabanı
+
+Entity Framework Core
+Code First Approach
+Fluent API Configuration
+Relationship Management
+
+Bu proje yapısı, büyük ölçekli enterprise uygulamalar için ideal bir başlangıç noktası sağlar ve modern web geliştirme standartlarına uygun olarak tasarlanmıştır.

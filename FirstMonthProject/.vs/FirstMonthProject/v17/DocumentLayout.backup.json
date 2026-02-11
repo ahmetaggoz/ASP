@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\FirstMonthProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC7057FA-2E59-4151-B11E-8DEFFFB4687C}|FirstMonthProject\\FirstMonthProject.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\firstmonthproject\\firstmonthproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC7057FA-2E59-4151-B11E-8DEFFFB4687C}|FirstMonthProject\\FirstMonthProject.csproj|solutionrelative:firstmonthproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC7057FA-2E59-4151-B11E-8DEFFFB4687C}|FirstMonthProject\\FirstMonthProject.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\firstmonthproject\\firstmonthproject\\wwwroot\\templatemo_551_stand_blog\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC7057FA-2E59-4151-B11E-8DEFFFB4687C}|FirstMonthProject\\FirstMonthProject.csproj|solutionrelative:firstmonthproject\\wwwroot\\templatemo_551_stand_blog\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC7057FA-2E59-4151-B11E-8DEFFFB4687C}|FirstMonthProject\\FirstMonthProject.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\firstmonthproject\\firstmonthproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC7057FA-2E59-4151-B11E-8DEFFFB4687C}|FirstMonthProject\\FirstMonthProject.csproj|solutionrelative:firstmonthproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 246,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\FirstMonthProject\\FirstMonthProject\\wwwroot\\templatemo_551_stand_blog\\index.html",
+              "RelativeDocumentMoniker": "FirstMonthProject\\wwwroot\\templatemo_551_stand_blog\\index.html",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\FirstMonthProject\\FirstMonthProject\\wwwroot\\templatemo_551_stand_blog\\index.html",
+              "RelativeToolTip": "FirstMonthProject\\wwwroot\\templatemo_551_stand_blog\\index.html",
+              "ViewState": "AgIAAIoBAAAAAAAAAAAowL0BAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-16T13:34:46.903Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\FirstMonthProject\\FirstMonthProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FirstMonthProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\FirstMonthProject\\FirstMonthProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FirstMonthProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAMEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-16T13:33:47.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\FirstMonthProject\\FirstMonthProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FirstMonthProject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\FirstMonthProject\\FirstMonthProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FirstMonthProject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T13:33:41.128Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
