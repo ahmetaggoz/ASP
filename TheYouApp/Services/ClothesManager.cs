@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.Exceptions;
+using Entities.Models;
 using Repositories.Contracts;
 using Services.Contracts;
 using System;
@@ -29,11 +30,7 @@ namespace Services
         {
             var cloth = _manager.Clothes.GetOneClothesById(id, trackChanges);
             if (cloth is null)
-            {
-                string message = $"Cloth with id:{id} could not found!";
-                _logger.LogInfo(message);
-                throw new Exception(message);
-            }
+                throw new ClothNotFoundException(id);
             _manager.Clothes.Delete(cloth);
             _manager.Save();
 
@@ -46,19 +43,18 @@ namespace Services
 
         public Clothes GetOneClothById(int id, bool trackChanges)
         {
-            return _manager.Clothes.GetOneClothesById(id, trackChanges);
+            var cloth = _manager.Clothes.GetOneClothesById(id, trackChanges);
+            if (cloth is null)
+                throw new ClothNotFoundException(id);
+            return cloth;
         }
 
         public void UpdateCloth(int id, Clothes cloth, bool trackChanges)
         {
             var entity = _manager.Clothes.GetOneClothesById(id, trackChanges);
             if (entity is null)
-            {
-                string message = $"Cloth with id:{id} could not found!";
-                _logger.LogInfo(message);
-                throw new Exception(message);
-            }
-                
+                throw new ClothNotFoundException(id);
+
 
             if (cloth is null)
                 throw new ArgumentNullException(nameof(cloth));
