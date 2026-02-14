@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{43D76189-8F57-431F-AC6D-2F7606E6BA65}|Services\\Services.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\services\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D76189-8F57-431F-AC6D-2F7606E6BA65}|Services\\Services.csproj|solutionrelative:services\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43D76189-8F57-431F-AC6D-2F7606E6BA65}|Services\\Services.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\services\\clothesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43D76189-8F57-431F-AC6D-2F7606E6BA65}|Services\\Services.csproj|solutionrelative:services\\clothesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AC75405-DFB9-4567-959E-FF70AA75CD9B}|Presentation\\Presentation.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\presentation\\controllers\\clothescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC75405-DFB9-4567-959E-FF70AA75CD9B}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\clothescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43D76189-8F57-431F-AC6D-2F7606E6BA65}|Services\\Services.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\services\\contracts\\iclothservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43D76189-8F57-431F-AC6D-2F7606E6BA65}|Services\\Services.csproj|solutionrelative:services\\contracts\\iclothservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 181,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClothesManager.cs",
-              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\ClothesManager.cs",
-              "RelativeDocumentMoniker": "Services\\ClothesManager.cs",
-              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\ClothesManager.cs",
-              "RelativeToolTip": "Services\\ClothesManager.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA7wDMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T16:22:26.078Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -71,15 +66,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ServiceManager.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\ServiceManager.cs",
+              "RelativeDocumentMoniker": "Services\\ServiceManager.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\ServiceManager.cs",
+              "RelativeToolTip": "Services\\ServiceManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T06:56:27.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClothesController.cs",
               "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Presentation\\Controllers\\ClothesController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\ClothesController.cs",
               "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Presentation\\Controllers\\ClothesController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\ClothesController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAywFEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T15:47:50.497Z",
+              "WhenOpened": "2026-02-14T06:55:53.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IClothService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\Contracts\\IClothService.cs",
+              "RelativeDocumentMoniker": "Services\\Contracts\\IClothService.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\Contracts\\IClothService.cs",
+              "RelativeToolTip": "Services\\Contracts\\IClothService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T06:51:04.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClothesManager.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\ClothesManager.cs",
+              "RelativeDocumentMoniker": "Services\\ClothesManager.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\ClothesManager.cs",
+              "RelativeToolTip": "Services\\ClothesManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T06:50:29.42Z",
               "EditorCaption": ""
             }
           ]

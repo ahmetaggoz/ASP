@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.DataTransferObjects;
+using Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Services.Contracts
         IEnumerable<Clothes> GetAllClothes(bool trackChanges);
         Clothes GetOneClothById(int id, bool trackChanges);
         Clothes CreateOneCloth(Clothes cloth);
-        void UpdateCloth(int id, Clothes cloth, bool trackChanges);
+        void UpdateCloth(int id, ClothesDtoForUpdate clothDto, bool trackChanges);
         void DeleteCloth(int id, bool trackChanges);
     }
 }

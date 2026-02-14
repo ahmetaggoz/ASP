@@ -1,4 +1,5 @@
-﻿using Entities.Exceptions;
+﻿using Entities.DataTransferObjects;
+using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -51,12 +52,12 @@ namespace Presentation.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateCloth([FromRoute(Name = "id")] int id, [FromBody] Clothes cloth)
+        public IActionResult UpdateCloth([FromRoute(Name = "id")] int id, [FromBody] ClothesDtoForUpdate clothDto)
         {
-                if (cloth is null)
+                if (clothDto is null)
                     return BadRequest("Cloth object is null.");
 
-                _manager.ClothService.UpdateCloth(id, cloth, true);
+                _manager.ClothService.UpdateCloth(id, clothDto, true);
 
                 return NoContent(); // 204 No Content
 
@@ -73,13 +74,11 @@ namespace Presentation.Controllers
         {
 
                 var existingCloth = _manager.ClothService.GetOneClothById(id, true);
-                if (existingCloth is null)
-                    return NotFound(); // 404 Not Found
 
                 
 
                 clothPatch.ApplyTo(existingCloth);
-                _manager.ClothService.UpdateCloth(id, existingCloth, true);
+                _manager.ClothService.UpdateCloth(id, new ClothesDtoForUpdate(existingCloth.Id, existingCloth.Name, existingCloth.Price), true);
                 return NoContent();
         }
     }
