@@ -8,7 +8,9 @@ namespace WebApi.Utilities.AutoMapper
     {
         public MappingProfile()
         {
-            CreateMap<ClothesDtoForUpdate, Clothes>();
+            CreateMap<ClothesDtoForUpdate, Clothes>().ReverseMap();
+            CreateMap<Clothes, ClothesDto>();
+            CreateMap<ClothesDtoForInsertion, Clothes>();
         }
     }
 }

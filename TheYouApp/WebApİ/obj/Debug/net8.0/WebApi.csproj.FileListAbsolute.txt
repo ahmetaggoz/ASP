@@ -161,3 +161,5 @@ C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\ref\WebApi.dll
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\NLog.dll
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

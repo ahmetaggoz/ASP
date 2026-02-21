@@ -23,11 +23,12 @@ namespace Services
             _logger = logger;
             _mapper = mapper;
         }
-        public Clothes CreateOneCloth(Clothes cloth)
+        public ClothesDto CreateOneCloth(ClothesDtoForInsertion clothDto)
         {
-            _manager.Clothes.Create(cloth);
+            var entity = _mapper.Map<Clothes>(clothDto);
+            _manager.Clothes.Create(entity);
             _manager.Save();
-            return cloth;
+            return _mapper.Map<ClothesDto>(entity);
         }
 
         public void DeleteCloth(int id, bool trackChanges)
@@ -40,17 +41,33 @@ namespace Services
 
         }
 
-        public IEnumerable<Clothes> GetAllClothes(bool trackChanges)
+        public IEnumerable<ClothesDto> GetAllClothes(bool trackChanges)
         {
-            return _manager.Clothes.GetAllClothes(trackChanges);
+            var clothes = _manager.Clothes.GetAllClothes(trackChanges);
+            return _mapper.Map<IEnumerable<ClothesDto>>(clothes);
         }
 
-        public Clothes GetOneClothById(int id, bool trackChanges)
+        public ClothesDto GetOneClothById(int id, bool trackChanges)
         {
             var cloth = _manager.Clothes.GetOneClothesById(id, trackChanges);
             if (cloth is null)
                 throw new ClothNotFoundException(id);
-            return cloth;
+            return _mapper.Map<ClothesDto>(cloth);
+        }
+
+        public (ClothesDtoForUpdate clothesDtoForUpdate, Clothes cloth) GetOneClothForPatch(int id, bool trackChanges)
+        {
+            var cloth = _manager.Clothes.GetOneClothesById(id, trackChanges);
+            if(cloth is null)
+                throw new ClothNotFoundException(id);
+            var clothDtoForUpdate = _mapper.Map<ClothesDtoForUpdate>(cloth);
+            return (clothDtoForUpdate, cloth);
+        }
+
+        public void SaveChangesForPatch(ClothesDtoForUpdate clothDtoForUpdate, Clothes clothes)
+        {
+            _mapper.Map(clothDtoForUpdate, clothes);
+            _manager.Save();
         }
 
         public void UpdateCloth(int id, ClothesDtoForUpdate clothesDto, bool trackChanges)

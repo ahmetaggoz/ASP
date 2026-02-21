@@ -1,19 +1,16 @@
 ﻿using Entities.DataTransferObjects;
 using Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services.Contracts
 {
     public interface IClothService
     {
-        IEnumerable<Clothes> GetAllClothes(bool trackChanges);
-        Clothes GetOneClothById(int id, bool trackChanges);
-        Clothes CreateOneCloth(Clothes cloth);
+        IEnumerable<ClothesDto> GetAllClothes(bool trackChanges);
+        ClothesDto GetOneClothById(int id, bool trackChanges);
+        ClothesDto CreateOneCloth(ClothesDtoForInsertion cloth);
         void UpdateCloth(int id, ClothesDtoForUpdate clothDto, bool trackChanges);
         void DeleteCloth(int id, bool trackChanges);
+        (ClothesDtoForUpdate clothesDtoForUpdate, Clothes cloth) GetOneClothForPatch(int id, bool trackChanges);
+        void SaveChangesForPatch(ClothesDtoForUpdate clothDtoForUpdate, Clothes clothes);
     }
 }

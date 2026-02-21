@@ -56,3 +56,58 @@
 2026-02-13 19:19:25.2659 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
 2026-02-13 19:20:47.0646 Info AppDomain Shutting down. LogFactory closing...
 2026-02-13 19:20:47.0747 Info LogFactory has been disposed.
+2026-02-16 18:56:26.5877 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 18:56:26.5978 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 18:56:26.5978 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:01:06.4360 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:01:06.4607 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:01:06.4607 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:02:24.3668 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:02:24.3774 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:02:24.3907 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:05:44.6170 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:05:44.6170 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:05:44.6391 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:13:38.8713 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:13:38.8796 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:13:38.8913 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:15:27.9562 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:15:27.9562 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:15:27.9814 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:20:21.9246 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:20:21.9327 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:20:21.9453 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:21:45.0948 Info AppDomain Shutting down. LogFactory closing...
+2026-02-16 19:21:45.0948 Info LogFactory has been disposed.
+2026-02-16 19:22:26.7632 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:22:26.7632 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:22:26.7863 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:24:09.7811 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:24:09.7914 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:24:09.8052 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:24:50.2361 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:24:50.2445 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:24:50.2445 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:44:14.9514 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-16 19:44:14.9514 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-16 19:44:14.9725 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-16 19:48:49.5401 Info AppDomain Shutting down. LogFactory closing...
+2026-02-16 19:48:49.5401 Info LogFactory has been disposed.
+2026-02-21 10:03:39.6007 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-21 10:03:39.6100 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-21 10:03:39.6224 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-21 10:09:10.0602 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-21 10:09:10.0602 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-21 10:09:10.0826 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-21 10:10:56.9947 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-21 10:10:56.9947 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-21 10:10:57.0131 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-21 10:16:20.9736 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-21 10:16:20.9839 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-21 10:16:21.0007 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-21 10:18:15.7287 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-21 10:18:15.7372 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-21 10:18:15.7507 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config
+2026-02-21 10:35:44.5338 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-02-21 10:35:44.5450 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-02-21 10:35:44.5625 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\nlog.config

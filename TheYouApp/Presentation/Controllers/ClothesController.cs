@@ -1,14 +1,9 @@
 ﻿using Entities.DataTransferObjects;
-using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Presentation.Controllers
 {
@@ -41,14 +36,16 @@ namespace Presentation.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddCloth([FromBody] Clothes cloth)
+        public IActionResult AddCloth([FromBody] ClothesDtoForInsertion clothDto)
         {
-                if (cloth is null)
+                if (clothDto is null)
                     return BadRequest("Cloth object is null.");
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
 
-                _manager.ClothService.CreateOneCloth(cloth);
+                var cloth = _manager.ClothService.CreateOneCloth(clothDto);
 
-                return StatusCode(201, cloth);
+                return StatusCode(201, cloth); //CreatedAtRoute()
         }
 
         [HttpPut("{id}")]
@@ -56,8 +53,10 @@ namespace Presentation.Controllers
         {
                 if (clothDto is null)
                     return BadRequest("Cloth object is null.");
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
 
-                _manager.ClothService.UpdateCloth(id, clothDto, true);
+                _manager.ClothService.UpdateCloth(id, clothDto, false);
 
                 return NoContent(); // 204 No Content
 
@@ -70,16 +69,23 @@ namespace Presentation.Controllers
                 return NoContent();
         }
         [HttpPatch("{id}")]
-        public IActionResult PartialUpdateOneCloth([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<Clothes> clothPatch)
+        public IActionResult PartialUpdateOneCloth([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<ClothesDtoForUpdate> clothPatch)
         {
 
-                var existingCloth = _manager.ClothService.GetOneClothById(id, true);
-
+            if(clothPatch is null)
+                return BadRequest();
+            var result = _manager.ClothService.GetOneClothForPatch(id, false);
                 
 
-                clothPatch.ApplyTo(existingCloth);
-                _manager.ClothService.UpdateCloth(id, new ClothesDtoForUpdate(existingCloth.Id, existingCloth.Name, existingCloth.Price), true);
-                return NoContent();
+            clothPatch.ApplyTo(result.clothesDtoForUpdate, ModelState);
+
+            TryValidateModel(result.clothesDtoForUpdate);
+
+            if(!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
+
+            _manager.ClothService.SaveChangesForPatch(result.clothesDtoForUpdate, result.cloth);
+            return NoContent();
         }
     }
 }
