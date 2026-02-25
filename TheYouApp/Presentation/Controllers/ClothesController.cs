@@ -2,11 +2,15 @@
 using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Presentation.ActionFilters;
 using Services.Contracts;
+using System.Threading.Tasks;
 
 
 namespace Presentation.Controllers
 {
+
+    [ServiceFilter(typeof(LogFilterAttribute))]
     [ApiController]
     [Route("api/clothes")]
     public class ClothesController : ControllerBase
@@ -18,63 +22,53 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllClothes()
+        public async Task<IActionResult> GetAllClothesAsync()
         {
-                var clothes = _manager.ClothService.GetAllClothes(false);
+                var clothes = await _manager.ClothService.GetAllClothesAsync(false);
                 return Ok(clothes);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetOneClothes([FromRoute(Name = "id")] int id)
+        public async Task<IActionResult> GetOneClothesAsync([FromRoute(Name = "id")] int id)
         {
             var cloth =
-                _manager.ClothService.GetOneClothById(id, false);
-               
-
+               await _manager.ClothService.GetOneClothByIdAsync(id, false);
             return Ok(cloth);
 
         }
 
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost]
-        public IActionResult AddCloth([FromBody] ClothesDtoForInsertion clothDto)
+        public async Task<IActionResult> AddClothAsync([FromBody] ClothesDtoForInsertion clothDto)
         {
-                if (clothDto is null)
-                    return BadRequest("Cloth object is null.");
-            if (!ModelState.IsValid)
-                return UnprocessableEntity(ModelState);
-
-                var cloth = _manager.ClothService.CreateOneCloth(clothDto);
-
-                return StatusCode(201, cloth); //CreatedAtRoute()
+            
+            var cloth = await _manager.ClothService.CreateOneClothAsync(clothDto);
+            return StatusCode(201, cloth); //CreatedAtRoute()
         }
 
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id}")]
-        public IActionResult UpdateCloth([FromRoute(Name = "id")] int id, [FromBody] ClothesDtoForUpdate clothDto)
+        public async Task<IActionResult>
+            UpdateClothAsync([FromRoute(Name = "id")] int id, [FromBody] ClothesDtoForUpdate clothDto)
         {
-                if (clothDto is null)
-                    return BadRequest("Cloth object is null.");
-            if (!ModelState.IsValid)
-                return UnprocessableEntity(ModelState);
-
-                _manager.ClothService.UpdateCloth(id, clothDto, false);
-
+                await _manager.ClothService.UpdateClothAsync(id, clothDto, false);
                 return NoContent(); // 204 No Content
 
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteCloth([FromRoute(Name = "id")] int id)
+        public async Task<IActionResult> DeleteClothAsync([FromRoute(Name = "id")] int id)
         {
-                _manager.ClothService.DeleteCloth(id, false);
+                await _manager.ClothService.DeleteClothAsync(id, false);
                 return NoContent();
         }
         [HttpPatch("{id}")]
-        public IActionResult PartialUpdateOneCloth([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<ClothesDtoForUpdate> clothPatch)
+        public async Task<IActionResult> PartialUpdateOneCloth([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<ClothesDtoForUpdate> clothPatch)
         {
 
             if(clothPatch is null)
                 return BadRequest();
-            var result = _manager.ClothService.GetOneClothForPatch(id, false);
+            var result = await _manager.ClothService.GetOneClothForPatchAsync(id, false);
                 
 
             clothPatch.ApplyTo(result.clothesDtoForUpdate, ModelState);
@@ -84,7 +78,7 @@ namespace Presentation.Controllers
             if(!ModelState.IsValid)
                 return UnprocessableEntity(ModelState);
 
-            _manager.ClothService.SaveChangesForPatch(result.clothesDtoForUpdate, result.cloth);
+            await _manager.ClothService.SaveChangesForPatchAsync(result.clothesDtoForUpdate, result.cloth);
             return NoContent();
         }
     }

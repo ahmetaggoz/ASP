@@ -5,12 +5,12 @@ namespace Services.Contracts
 {
     public interface IClothService
     {
-        IEnumerable<ClothesDto> GetAllClothes(bool trackChanges);
-        ClothesDto GetOneClothById(int id, bool trackChanges);
-        ClothesDto CreateOneCloth(ClothesDtoForInsertion cloth);
-        void UpdateCloth(int id, ClothesDtoForUpdate clothDto, bool trackChanges);
-        void DeleteCloth(int id, bool trackChanges);
-        (ClothesDtoForUpdate clothesDtoForUpdate, Clothes cloth) GetOneClothForPatch(int id, bool trackChanges);
-        void SaveChangesForPatch(ClothesDtoForUpdate clothDtoForUpdate, Clothes clothes);
+        Task<IEnumerable<ClothesDto>> GetAllClothesAsync(bool trackChanges);
+        Task<ClothesDto> GetOneClothByIdAsync(int id, bool trackChanges);
+        Task<ClothesDto> CreateOneClothAsync(ClothesDtoForInsertion cloth);
+        Task UpdateClothAsync(int id, ClothesDtoForUpdate clothDto, bool trackChanges);
+        Task DeleteClothAsync(int id, bool trackChanges);
+        Task<(ClothesDtoForUpdate clothesDtoForUpdate, Clothes cloth)> GetOneClothForPatchAsync(int id, bool trackChanges);
+        Task SaveChangesForPatchAsync(ClothesDtoForUpdate clothDtoForUpdate, Clothes clothes);
     }
 }

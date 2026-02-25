@@ -4,11 +4,6 @@ using Entities.Exceptions;
 using Entities.Models;
 using Repositories.Contracts;
 using Services.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services
 {
@@ -23,64 +18,62 @@ namespace Services
             _logger = logger;
             _mapper = mapper;
         }
-        public ClothesDto CreateOneCloth(ClothesDtoForInsertion clothDto)
+        public async Task<ClothesDto> CreateOneClothAsync(ClothesDtoForInsertion clothDto)
         {
             var entity = _mapper.Map<Clothes>(clothDto);
             _manager.Clothes.Create(entity);
-            _manager.Save();
+            await _manager.SaveAsync();
             return _mapper.Map<ClothesDto>(entity);
         }
 
-        public void DeleteCloth(int id, bool trackChanges)
+        public async Task DeleteClothAsync(int id, bool trackChanges)
         {
-            var cloth = _manager.Clothes.GetOneClothesById(id, trackChanges);
-            if (cloth is null)
-                throw new ClothNotFoundException(id);
-            _manager.Clothes.Delete(cloth);
-            _manager.Save();
+            var entity = await GetClothAndCheckIfItExists(id, trackChanges);
+            _manager.Clothes.Delete(entity);
+            await _manager.SaveAsync();
 
         }
 
-        public IEnumerable<ClothesDto> GetAllClothes(bool trackChanges)
+        public async Task<IEnumerable<ClothesDto>> GetAllClothesAsync(bool trackChanges)
         {
-            var clothes = _manager.Clothes.GetAllClothes(trackChanges);
+            var clothes = await _manager.Clothes.GetAllClothesAsync(trackChanges);
             return _mapper.Map<IEnumerable<ClothesDto>>(clothes);
         }
 
-        public ClothesDto GetOneClothById(int id, bool trackChanges)
+        public async Task<ClothesDto> GetOneClothByIdAsync(int id, bool trackChanges)
         {
-            var cloth = _manager.Clothes.GetOneClothesById(id, trackChanges);
-            if (cloth is null)
-                throw new ClothNotFoundException(id);
+            var cloth = await GetClothAndCheckIfItExists(id, trackChanges);
+            
             return _mapper.Map<ClothesDto>(cloth);
         }
 
-        public (ClothesDtoForUpdate clothesDtoForUpdate, Clothes cloth) GetOneClothForPatch(int id, bool trackChanges)
+        public async Task<(ClothesDtoForUpdate clothesDtoForUpdate, Clothes cloth)> GetOneClothForPatchAsync(int id, bool trackChanges)
         {
-            var cloth = _manager.Clothes.GetOneClothesById(id, trackChanges);
-            if(cloth is null)
-                throw new ClothNotFoundException(id);
+            var cloth = await GetClothAndCheckIfItExists(id, trackChanges);
             var clothDtoForUpdate = _mapper.Map<ClothesDtoForUpdate>(cloth);
             return (clothDtoForUpdate, cloth);
         }
 
-        public void SaveChangesForPatch(ClothesDtoForUpdate clothDtoForUpdate, Clothes clothes)
+        public async Task SaveChangesForPatchAsync(ClothesDtoForUpdate clothDtoForUpdate, Clothes clothes)
         {
             _mapper.Map(clothDtoForUpdate, clothes);
-            _manager.Save();
+            await _manager.SaveAsync();
         }
 
-        public void UpdateCloth(int id, ClothesDtoForUpdate clothesDto, bool trackChanges)
+        public async Task UpdateClothAsync(int id, ClothesDtoForUpdate clothesDto, bool trackChanges)
         {
-            var entity = _manager.Clothes.GetOneClothesById(id, trackChanges);
-            if (entity is null)
-                throw new ClothNotFoundException(id);
-
+            var entity = await GetClothAndCheckIfItExists(id, trackChanges);
             entity = _mapper.Map<Clothes>(clothesDto);
-
-
             _manager.Clothes.Update(entity);
-            _manager.Save();
+            await _manager.SaveAsync();
+        }
+
+        private async Task<Clothes> GetClothAndCheckIfItExists(int id, bool trackChanges)
+        {
+            var cloth = await _manager.Clothes.GetOneClothesByIdAsync(id, trackChanges);
+            if (cloth is null)
+                throw new ClothNotFoundException(id);
+            return cloth;
         }
     }
 }

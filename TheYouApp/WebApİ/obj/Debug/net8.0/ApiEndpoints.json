@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Presentation.Controllers.ClothesController",
-    "Method": "GetAllClothes",
+    "Method": "GetAllClothesAsync",
     "RelativePath": "api/clothes",
     "HttpMethod": "GET",
     "IsController": true,
@@ -11,7 +11,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ClothesController",
-    "Method": "AddCloth",
+    "Method": "AddClothAsync",
     "RelativePath": "api/clothes",
     "HttpMethod": "POST",
     "IsController": true,
@@ -27,7 +27,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ClothesController",
-    "Method": "GetOneClothes",
+    "Method": "GetOneClothesAsync",
     "RelativePath": "api/clothes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -43,7 +43,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ClothesController",
-    "Method": "UpdateCloth",
+    "Method": "UpdateClothAsync",
     "RelativePath": "api/clothes/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -64,7 +64,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ClothesController",
-    "Method": "DeleteCloth",
+    "Method": "DeleteClothAsync",
     "RelativePath": "api/clothes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,

@@ -1,9 +1,5 @@
 ﻿using Repositories.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Repositories.EFCore
 {
@@ -19,9 +15,9 @@ namespace Repositories.EFCore
         // Implement the properties for each repository interface
         public IClothesRepository Clothes => _clothesRepository.Value;
 
-        public void Save()
+        public async Task SaveAsync()
         {
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }
