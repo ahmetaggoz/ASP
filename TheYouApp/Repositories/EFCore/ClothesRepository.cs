@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using System;
@@ -24,11 +25,13 @@ namespace Repositories.EFCore
             Delete(clothes);
 
 
-        public async Task<IEnumerable<Clothes>> GetAllClothesAsync(bool trackChanges) =>
-            await FindAll(trackChanges)
+        public async Task<PagedList<Clothes>> GetAllClothesAsync(ClothParameters clothParameters, bool trackChanges)
+        {
+            var clothes = await FindAll(trackChanges)
             .OrderBy(c => c.Id)
             .ToListAsync();
-
+            return PagedList<Clothes>.ToPagedList(clothes, clothParameters.PageNumber, clothParameters.PageSize);
+        }
 
         public async Task<Clothes> GetOneClothesByIdAsync(int id, bool trackChanges) =>
             await FindByCondition(c => c.Id.Equals(id), trackChanges)

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43D76189-8F57-431F-AC6D-2F7606E6BA65}|Services\\Services.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\services\\clothesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D76189-8F57-431F-AC6D-2F7606E6BA65}|Services\\Services.csproj|solutionrelative:services\\clothesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3515068-DB4E-4C83-896A-2E0811328A05}|WebAp\u0130\\WebApi.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\webap\u0130\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3515068-DB4E-4C83-896A-2E0811328A05}|WebAp\u0130\\WebApi.csproj|solutionrelative:webap\u0130\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC75405-DFB9-4567-959E-FF70AA75CD9B}|Presentation\\Presentation.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\presentation\\controllers\\clothescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC75405-DFB9-4567-959E-FF70AA75CD9B}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\clothescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3515068-DB4E-4C83-896A-2E0811328A05}|WebAp\u0130\\WebApi.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\webap\u0130\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3515068-DB4E-4C83-896A-2E0811328A05}|WebAp\u0130\\WebApi.csproj|solutionrelative:webap\u0130\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 181,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClothesManager.cs",
-              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\ClothesManager.cs",
-              "RelativeDocumentMoniker": "Services\\ClothesManager.cs",
-              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\ClothesManager.cs",
-              "RelativeToolTip": "Services\\ClothesManager.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAwwEEAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T17:02:19.388Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -71,15 +58,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClothesController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Presentation\\Controllers\\ClothesController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\ClothesController.cs",
-              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Presentation\\Controllers\\ClothesController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\ClothesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\WebAp\u0130\\Program.cs",
+              "RelativeDocumentMoniker": "WebAp\u0130\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\WebAp\u0130\\Program.cs",
+              "RelativeToolTip": "WebAp\u0130\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAADwvzwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T17:01:03.907Z",
+              "WhenOpened": "2026-03-02T13:11:38.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicesExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\WebAp\u0130\\Extensions\\ServicesExtensions.cs",
+              "RelativeDocumentMoniker": "WebAp\u0130\\Extensions\\ServicesExtensions.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\WebAp\u0130\\Extensions\\ServicesExtensions.cs",
+              "RelativeToolTip": "WebAp\u0130\\Extensions\\ServicesExtensions.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwCMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T13:08:55.102Z",
               "EditorCaption": ""
             }
           ]

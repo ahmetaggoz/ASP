@@ -2,6 +2,7 @@
 using Entities.DataTransferObjects;
 using Entities.Exceptions;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Repositories.Contracts;
 using Services.Contracts;
 
@@ -34,10 +35,11 @@ namespace Services
 
         }
 
-        public async Task<IEnumerable<ClothesDto>> GetAllClothesAsync(bool trackChanges)
+        public async Task<(IEnumerable<ClothesDto> clothesDtos, MetaData metaData)> GetAllClothesAsync(ClothParameters clothParameters, bool trackChanges)
         {
-            var clothes = await _manager.Clothes.GetAllClothesAsync(trackChanges);
-            return _mapper.Map<IEnumerable<ClothesDto>>(clothes);
+            var clothesWithMetaData = await _manager.Clothes.GetAllClothesAsync(clothParameters, trackChanges);
+            var clothesDto = _mapper.Map<IEnumerable<ClothesDto>>(clothesWithMetaData);
+            return (clothesDto, clothesWithMetaData.MetaData);
         }
 
         public async Task<ClothesDto> GetOneClothByIdAsync(int id, bool trackChanges)

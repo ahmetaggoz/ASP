@@ -1,11 +1,12 @@
 ﻿using Entities.DataTransferObjects;
 using Entities.Models;
+using Entities.RequestFeatures;
 
 namespace Services.Contracts
 {
     public interface IClothService
     {
-        Task<IEnumerable<ClothesDto>> GetAllClothesAsync(bool trackChanges);
+        Task<(IEnumerable<ClothesDto> clothesDtos, MetaData metaData  )> GetAllClothesAsync(ClothParameters clothParameters, bool trackChanges);
         Task<ClothesDto> GetOneClothByIdAsync(int id, bool trackChanges);
         Task<ClothesDto> CreateOneClothAsync(ClothesDtoForInsertion cloth);
         Task UpdateClothAsync(int id, ClothesDtoForUpdate clothDto, bool trackChanges);

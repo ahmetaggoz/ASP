@@ -1,9 +1,11 @@
 ﻿using Entities.DataTransferObjects;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFilters;
 using Services.Contracts;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 
@@ -22,10 +24,12 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllClothesAsync()
+        public async Task<IActionResult> GetAllClothesAsync([FromQuery] ClothParameters clothParameters)
         {
-                var clothes = await _manager.ClothService.GetAllClothesAsync(false);
-                return Ok(clothes);
+                var pagedResult = await _manager.ClothService.GetAllClothesAsync(clothParameters,false);
+
+                Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(pagedResult.metaData));
+            return Ok(pagedResult.clothesDtos);
         }
 
         [HttpGet("{id}")]
