@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K581yA5lANg=",
+  "dgSpecHash": "Fx1HpxyffPM=",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,8 @@
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\nlog\\6.1.0\\nlog.6.1.0.nupkg.sha512",
-    "C:\\Users\\ahmet\\.nuget\\packages\\nlog.extensions.logging\\6.1.1\\nlog.extensions.logging.6.1.1.nupkg.sha512"
+    "C:\\Users\\ahmet\\.nuget\\packages\\nlog.extensions.logging\\6.1.1\\nlog.extensions.logging.6.1.1.nupkg.sha512",
+    "C:\\Users\\ahmet\\.nuget\\packages\\system.linq.dynamic.core\\1.7.2\\system.linq.dynamic.core.1.7.2.nupkg.sha512"
   ],
   "logs": []
 }

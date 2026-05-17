@@ -37,6 +37,8 @@ namespace Services
 
         public async Task<(IEnumerable<ClothesDto> clothesDtos, MetaData metaData)> GetAllClothesAsync(ClothParameters clothParameters, bool trackChanges)
         {
+            if (!clothParameters.ValidPriceRange)
+                throw new PriceOutOfRangeException();
             var clothesWithMetaData = await _manager.Clothes.GetAllClothesAsync(clothParameters, trackChanges);
             var clothesDto = _mapper.Map<IEnumerable<ClothesDto>>(clothesWithMetaData);
             return (clothesDto, clothesWithMetaData.MetaData);

@@ -2,6 +2,7 @@
 using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
+using Repositories.EFCore.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.EFCore
 {
-    public class ClothesRepository : RepositoryBase<Clothes>, IClothesRepository
+    public sealed class ClothesRepository : RepositoryBase<Clothes>, IClothesRepository
     {
         public ClothesRepository(RepositoryContext context) : base(context)
         {
@@ -28,7 +29,9 @@ namespace Repositories.EFCore
         public async Task<PagedList<Clothes>> GetAllClothesAsync(ClothParameters clothParameters, bool trackChanges)
         {
             var clothes = await FindAll(trackChanges)
-            .OrderBy(c => c.Id)
+            .FilterClothesByPrice(clothParameters.MinPrice,clothParameters.MaxPrice)
+            .Search(clothParameters.SearchTerm)
+            .Sort(clothParameters.OrderBy)
             .ToListAsync();
             return PagedList<Clothes>.ToPagedList(clothes, clothParameters.PageNumber, clothParameters.PageSize);
         }

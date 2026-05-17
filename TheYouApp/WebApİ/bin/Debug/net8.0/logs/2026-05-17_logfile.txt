@@ -1,0 +1,381 @@
+2026-05-17 17:11:59.2101 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:11:59.1872602+03:00"}
+2026-05-17 17:12:32.3481 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:12:32.3479629+03:00"}
+2026-05-17 17:12:39.3314 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:12:39.331354+03:00"}
+2026-05-17 17:13:00.0458 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:13:00.0457329+03:00"}
+2026-05-17 17:14:08.4794 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:14:08.4793494+03:00"}
+2026-05-17 17:14:08.7704 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderBy) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:14:17.8996 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:14:17.899562+03:00"}
+2026-05-17 17:14:18.0677 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderBy) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:14:42.9005 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:14:42.9004631+03:00"}
+2026-05-17 17:14:43.0404 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderBy) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:15:21.8830 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:15:21.8829977+03:00"}
+2026-05-17 17:15:22.0419 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderBy) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:16:12.5580 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:16:12.5330623+03:00"}
+2026-05-17 17:16:13.2792 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderBy) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:17:59.1859 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:17:59.1540051+03:00"}
+2026-05-17 17:17:59.8765 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderBy) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:22:13.8839 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:22:13.853293+03:00"}
+2026-05-17 17:22:14.7187 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderByQueryString) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:23:57.9947 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:23:57.9694721+03:00"}
+2026-05-17 17:23:58.7426 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderByQueryString) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:24:13.3712 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:24:13.3711233+03:00"}
+2026-05-17 17:24:13.5501 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderByQueryString) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:30:15.3630 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:30:15.3313078+03:00"}
+2026-05-17 17:30:16.1389 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderByQueryString) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:31:00.3941 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:31:00.3940751+03:00"}
+2026-05-17 17:31:08.0206 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:31:08.0205903+03:00"}
+2026-05-17 17:31:13.5131 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:31:13.5130759+03:00"}
+2026-05-17 17:31:36.2486 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:31:36.2486267+03:00"}
+2026-05-17 17:31:43.2796 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:31:43.2795941+03:00"}
+2026-05-17 17:31:49.4565 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:31:49.456511+03:00"}
+2026-05-17 17:31:59.7182 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:31:59.7182438+03:00"}
+2026-05-17 17:31:59.8577 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderByQueryString) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:35:44.6479 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:35:44.6222837+03:00"}
+2026-05-17 17:35:45.3596 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderByQueryString) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:36:01.0440 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:36:01.0439513+03:00"}
+2026-05-17 17:36:01.2222 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderByQueryString) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:36:07.3699 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:36:07.3698303+03:00"}
+2026-05-17 17:36:07.5231 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.Extensions.ClothesRepositoryExtensions.Sort(IQueryable`1 clothes, String orderByQueryString) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\Extensions\ClothesRepositoryExtensions.cs:line 52
+   at Repositories.EFCore.ClothesRepository.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Repositories\EFCore\ClothesRepository.cs:line 31
+   at Services.ClothesManager.GetAllClothesAsync(ClothParameters clothParameters, Boolean trackChanges) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Services\ClothesManager.cs:line 42
+   at Presentation.Controllers.ClothesController.GetAllClothesAsync(ClothParameters clothParameters) in C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\Presentation\Controllers\ClothesController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-05-17 17:38:08.6054 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:38:08.5755687+03:00"}
+2026-05-17 17:38:18.2473 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:38:18.247266+03:00"}
+2026-05-17 17:38:23.1469 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:38:23.1468728+03:00"}
+2026-05-17 17:39:21.2133 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:39:21.1789107+03:00"}
+2026-05-17 17:50:39.6780 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:50:39.6506448+03:00"}
+2026-05-17 17:50:46.4675 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:50:46.4673192+03:00"}
+2026-05-17 17:50:49.7510 INFO {"ModelName":"OnActionExecuting","Controller":"Clothes","Action":"GetAllClothes","Id":null,"CreateAt":"2026-05-17T17:50:49.7509547+03:00"}

@@ -150,7 +150,6 @@ C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\staticwebassets
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\swae.build.ex.cache
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\WebApi.csproj.Up2Date
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\obj\Debug\net8.0\WebApi.dll
@@ -163,3 +162,4 @@ C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\NLog.dll
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ahmet\Desktop\Is\ASP\TheYouApp\WebApİ\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll

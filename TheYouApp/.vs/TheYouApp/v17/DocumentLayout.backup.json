@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C3515068-DB4E-4C83-896A-2E0811328A05}|WebAp\u0130\\WebApi.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\webap\u0130\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3515068-DB4E-4C83-896A-2E0811328A05}|WebAp\u0130\\WebApi.csproj|solutionrelative:webap\u0130\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3515068-DB4E-4C83-896A-2E0811328A05}|WebAp\u0130\\WebApi.csproj|c:\\users\\ahmet\\desktop\\is\\asp\\theyouapp\\webap\u0130\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3515068-DB4E-4C83-896A-2E0811328A05}|WebAp\u0130\\WebApi.csproj|solutionrelative:webap\u0130\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 181,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,32 +46,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\WebAp\u0130\\Program.cs",
-              "RelativeDocumentMoniker": "WebAp\u0130\\Program.cs",
-              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\WebAp\u0130\\Program.cs",
-              "RelativeToolTip": "WebAp\u0130\\Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAADwvzwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T13:11:38.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServicesExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\WebAp\u0130\\Extensions\\ServicesExtensions.cs",
-              "RelativeDocumentMoniker": "WebAp\u0130\\Extensions\\ServicesExtensions.cs",
-              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Is\\ASP\\TheYouApp\\WebAp\u0130\\Extensions\\ServicesExtensions.cs",
-              "RelativeToolTip": "WebAp\u0130\\Extensions\\ServicesExtensions.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwCMAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T13:08:55.102Z",
-              "EditorCaption": ""
             }
           ]
         }
